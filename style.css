@@ -1,0 +1,140 @@
+*{
+	box-sizing: border-box
+}
+
+body{
+	font-family: 'Open Sans', sans-serif;
+	color:  #1B1B1B ;
+	background: url('email-pattern.png');
+	background-repeat: repeat;
+}
+
+.container{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	max-width: 320px;
+	height: auto;
+	margin: 50px auto;
+	/* border: 1px solid #1B1B1B; */
+	transition: box-shadow 0.5s;
+	border-radius:10px;
+}
+.container:hover{
+	box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+	/* transform: scale(1.05) */
+}
+
+.small-container{
+	max-width: 100%;
+	border: none;
+}
+
+.display{
+	background-color: #fdfefe;
+	text-align: right;
+	padding: 15px;
+	border-radius: 10px 10px 0 0;
+	min-height: 100px;
+}
+
+.numpad{
+	background-color: #1B1B1B;
+	border-radius: 0 0 10px 10px;
+}
+
+#calculation{
+	color:  #d5d8dc  ;
+	font-size: 15px;
+	font-weight: normal;
+	height: 50%;
+	/* direction: rtl; */
+}
+
+#output{
+	color: #1B1B1B ;
+	font-weight: bold;
+	font-size: 32px;
+	margin-top: 5px;
+	margin-bottom: 15px;
+	height: 50%;
+	overflow-wrap: break-word;
+  	word-wrap: break-word;
+}
+
+#calculation:hover{
+	font-size: 20px;
+}
+
+
+.row{
+	display: flex;
+	justify-content: space-around;
+}
+
+Button{
+	width: 50px;
+	height: 50px;
+	color: #fdfefe;
+	background-color: #1B1B1B;
+	border: none;
+}
+
+.number{
+	font-size: 20px;
+	font-weight: normal;
+	border-radius: 50%;
+	margin: 15px;
+}
+
+.operator, .float{
+	font-size: 12px;
+	font-weight: normal;
+	border-radius: 10%;
+	color: #424949;
+	margin: 15px;
+}
+
+
+.number:hover:not(.float){
+	background-color:  #fdfefe;
+	color: #1B1B1B;
+}
+
+
+.operator:hover, .float:hover{
+	font-size: 20px;
+	color: #abb2b9;
+}
+
+.equal, .devide, .mul, .plus, .minus, .root{
+	border-radius: 50%;
+	color: #1B1B1B;
+}
+
+.equal{
+	background-color: #d72631;
+}
+
+.devide{
+	background-color: #d8c3a5;
+}
+
+.mul{
+	background-color: #376e6f;
+}
+
+.plus{
+	background-color: #57ba98;
+}
+
+.minus{
+	background-color: #f172a1;
+}
+.root{
+	background-color: #1d3c45;
+}
+
+.equal:hover ,.mul:hover, .plus:hover, .minus:hover, .devide:hover , .root:hover{
+	color: #fdfefe;
+}
